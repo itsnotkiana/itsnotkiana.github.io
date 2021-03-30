@@ -1,38 +1,155 @@
-<!DOCTYPE html>
+body { 
+	background: radial-gradient(#41222C, #3D4023);
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+/*.light-mode {
+  background: white;
+}*/
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="act1.css">
-<script src= "metamorphosis.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+@font-face {
+    font-family: "NeueMetana";
+    src: url("fonts/NeueMetana-Regular.otf");
+}
 
-    <title>The Metamorphosis</title>
-  </head>
-  <body>
-<nav>
- <!--  <button onclick="myFunction()">Toggle light mode</button> -->
-</nav>
+.blob1 {
+	position: relative;
+	right:-20em;
+	top: 2em;
+	max-width: 100%;
+	height:auto;
+}
 
-    <div class="blobs-container">
-  <div class="blob white"><span class="tooltiptext">On the morning he must travel for his dead end job, Gregor Samsa wakes up to find himself transformed into a giant insect. Despite this, he knows he must catch the train for work so he can support his family. </span>
-  </div>
-</div>
-    <div class = "cluster-1">
-  		<div class = "blob1">
-  			<img src = "images/blob-1.png" width= "auto" height = "auto">
-  		</div>
-  		<div class = "gregor-inbed">
-  			<img src = "images/gregor-in-bed.png" width="30%" height="auto">
-  		</div>
-    <div class = "swing">
-      <div class = "clock">
-        <img src = "images/clock.png" width="20%" height="auto">
-      </div>
-    </div>
-    </div>
+.gregor-inbed{
+	position: relative;
+	right:-30em;
+	top:-40em;
+	z-index:2;
+}
 
-  </body>
-  </html>
+.cluster-1{
+	position:relative;
+	right:-10em;
+	top:6em;
+	width:100%;
+	height:auto;
+}
+
+.clock {
+	position: relative;
+	top: -83em;
+	left:20em;
+	z-index:1;
+}
+
+.swing {
+    animation: swing ease-in-out 2s infinite alternate;
+    transform-origin: center 20px;
+    }
+
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+/*adapted from:https://codepen.io/FlorinPop17/pen/drJJzK*/
+.blobs-container {
+	display: inline;
+}
+.blob {
+	background: white;
+	border-radius: 80%;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	margin: 10px;
+	height: 40px;
+	width: 40px;
+}
+.blob.white {
+	background: white;
+	position: relative;
+	top: 20em;
+	left: 60em;
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+	animation: pulse-white 2s infinite;
+	z-index: 10;
+}
+.blob.white: hover{
+	 -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;
+}
+.blob: hover{
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;
+}
+
+@keyframes pulse-white {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+
+.blob .tooltiptext {
+  visibility: hidden;
+  width: 22em;
+  background-color: #EAE6E1;
+  color: #402A29;
+  text-align: left;
+  font-family: "NeueMetana";
+  border-radius: 6px;
+  padding: 20px;
+  position: absolute;
+  z-index: 5;
+  bottom: 125%;
+  left: 50%;
+  margin-left: 0px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;
+}
+
+.blob .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: #EAE6E1 transparent transparent transparent;
+   animation-play-state:paused;
+  cursor: pointer;
+}
+
+.blob:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+   -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;
+}
+
