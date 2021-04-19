@@ -1,0 +1,135 @@
+body { 
+	background: radial-gradient(#342241, #233440, #385238);
+	min-height: 100%;
+	width: 100%;
+     max-width: 100%;
+  overflow: hidden;
+}
+
+@font-face {
+    font-family: "NeueMetana";
+    src: url("fonts/NeueMetana-Regular.otf");
+  }
+
+  @font-face {
+     font-family: "Harmond";
+     src: url("fonts/Harmond-ExtraBoldExpanded.otf");
+}
+@font-face {
+   font-family: "Harmond-ExtBdItaExp";
+  src: url("fonts/Harmond-ExtBdItaExp.otf");
+}
+grid-container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns:repeat(6, 1fr);
+/* grid-template-columns: 1fr 4fr 2fr; */
+  gap: 17px 21px;
+}
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns:repeat(6, 1fr);
+/* grid-template-columns: 1fr 4fr 2fr; */
+  gap: 10px 5px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  text-align: center;
+}
+.header {
+  background-color:transparent;
+  grid-column-start:1;
+  grid-column-end:7;
+  /* height:20vh; */
+  height:35vh;
+  color:#F48169;
+}
+.top {
+background-color: transparent;
+  height: 55vh;
+}
+.top-one {
+  grid-column: 1 / span 2;
+}
+.top-two {
+  grid-column: 3/ span 2;
+}
+.top-three {
+  grid-column:5 / 7;
+}
+.home-1 {
+  position: relative;
+  top:-8vh;
+  left: -5vw;
+  width:85%;
+   max-width: 100%;
+    height: auto;
+  }
+.home-2 {
+  position: relative;
+  top:-90vh;
+  left: 40vw;
+  width:30%;
+   max-width: 100%;
+    height: auto;
+}
+.title {
+  margin-top: 2em;
+  position: relative;
+  top: -5vw;
+  max-width: 100%;
+    height: auto;
+    text-align: center;
+    text-overflow: wrap;
+}
+h1 {
+  position: relative;
+   font-family: "Harmond";
+   top:0vh;
+   text-align: center;
+  font-size: 6vw;
+  margin: 1;
+}
+.desc {
+  position: absolute;
+   font-family: "NeueMetana";
+   top:32vh;
+   text-align: left;
+  font-size: 1.5vw;
+  color: #EAE6E1;
+  width:40vw;
+  left: 32vw;
+}
+.the{
+  position: relative;
+   font-family: "Harmond-ExtBdItaExp";
+   font-size: 3vw;
+   top:2em;
+   letter-spacing: 0.1em;
+ }
+.author{
+  position: relative;
+   font-family: "Harmond-ExtBdItaExp";
+   font-size: 3vw;
+   top:-1.5em;
+    letter-spacing: 0.1em;
+ }
+ .start{
+  position: relative;
+  top: 10em;
+
+ }
+@media screen and (max-width: 1100px) {
+  body{
+    overflow: hidden;
+  }
+.home-1 {
+  position: relative;
+  top:4vh;
+  left: -5vw;
+  width:85%;
+   max-width: 100%;
+    height: auto;
+}

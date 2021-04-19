@@ -1,0 +1,26 @@
+body{
+ background: radial-gradient(#342241, #233440, #385238);
+ min-height: 100%;
+	width: 100%;
+     max-width: 100%;
+  overflow: hidden;
+}
+.act2-desc{
+margin-top: 2em;
+  position: relative;
+  top: -5vw;
+  max-width: 100%;
+    height: auto;
+    text-align: center;
+    text-overflow: wrap;
+}
+h1{
+ position: relative;
+   font-family: "Harmond";
+   top:0vh;
+   text-align: center;
+  font-size: 6vw;
+  margin: 1;
+  padding:2em;
+  color: #EAE6E1;
+}

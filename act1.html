@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="act1.css">
+<!-- <link rel="stylesheet" href="act1mobile.css"> -->
+<link rel="stylesheet" href="nav.css">
+<script src= "metamorphosis.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+
+    <title>The Metamorphosis</title>
+  </head>
+  <body>
+    <header>
+ <nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+
+        <ul id="menu">
+ <li class="menu-item active"><a href="home.html">Home</a></li>
+           <li class="menu-item"><a href="act1.html">Act 1</a></li>
+          <li class="menu-item"><a href="act2.html">Act 2</a></li>
+          <li class="menu-item"><a href="act3.html">Act 3</a></li>
+
+    </ul>
+  </div>
+</nav>
+  </header>
+  
+<div class="grid-container">
+  <div class="grid-item top top-one">
+    <h2 class = "act1-desc">One strange morning, Gregor Samsa wakes up trapped inside the body of a giant insect.</h2>
+    <div class="popup" onclick="myFunction()"><img class="instructions" src="images/instructions.png">
+  <span class="popuptext" id="myPopup">Hover over the glowing circles to read about each part of the story. Use the menu at the top of the screen to explore each act. <br><h4><i>Click or tap to close.</i></h4></span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+  </div>
+
+
+<div class="grid-item top top-two">
+    <div class = "cluster-1">
+       <div class="blobs-container">
+  <div class="blob white"><span class="tooltiptext">On the morning he must travel for his dead end job, Gregor Samsa wakes up to find himself transformed into a giant insect. Despite this, he knows he must catch the train for work so he can support his family. </span>
+  </div>
+</div>
+  			<img class = "bg-1" src = "images/blob-1.png" width= "60%" height = "auto">
+  			<img class= "gregor-inbed" src = "images/gregor-in-bed.png" width="40%" height="auto">
+    <div class = "swing">
+        <img class ="clock" src = "images/clock.png" width="25%" height="auto">
+      </div>
+    </div>
+
+    <div class = "cluster-2">
+       <div class="blobs-container">
+  <div class="blob black"><span class="tooltiptext-2">Gregor glumly thinks about his life, and reflects on how sad and tired he is and how he wishes to quit his dead-end job but can’t for the sake of his family. </span>
+  </div>
+</div>
+        <img class = "act1-2" src = "images/act1-2.png" width= "60%" height = "auto">
+    <div class = "swing2">
+        <img class ="gregor-1" src = "images/gregor-1.png" width="25%" height="auto">
+      </div>
+    </div>
+
+     <div class = "cluster-3">
+       <div class="blobs-container">
+  <div class="blob brown"><span class="tooltiptext-2">His family begins to worry and are knocking on the door. He tries to answer but the words won’t come out properly. </span>
+  </div>
+</div>
+        <img class = "act1-3" src = "images/act1-3.png" width= "60%" height = "auto">
+    <div class = "tada">
+        <img class ="jumble" src = "images/jumble.png" width="25%" height="auto">
+      </div>
+    </div>
+    <div class = "cluster-4">
+       <div class="blobs-container">
+  <div class="blob pink"><span class="tooltiptext">Gregor gets the door open and his family is immediately afraid of him. He tries to explain but they do not listen or look at him.</span>
+  </div>
+</div>
+         <img class ="door" src = "images/door.png" width="28%" height="auto">
+        <img class = "act1-4" src = "images/act1-4.png" width= "64%" height = "auto">
+    <div class = "shake">
+        <img class ="scream" src = "images/scream.png" width="37%" height="auto">
+      </div>
+    </div>
+    <div class = "cluster-5">
+       <div class="blobs-container">
+  <div class="blob blue"><span class="tooltiptext-2">His father chases him back to his room. He scrapes his side on the door frame causing him to become severely injured and he goes into a deep sleep.</span>
+  </div>
+</div>
+     <img class = "act1-5" src = "images/act1-5.png" width= "50%" height = "auto">
+    </div>
+   <a href="act2.html"><img class ="button-act2" src = "images/act2button.png" width= "27%" height = "auto" top= "20em"></a>
+    </div>
+  </body>
+  </html>
