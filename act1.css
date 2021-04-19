@@ -567,25 +567,7 @@ background-color: #EAE6E1;
   from {opacity: 0;}
   to {opacity:1 ;}
 }
-.topbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 1;
-  overflow: hidden;
-  background-color: #333;
-}
 
-.bar {
-  float: center;
-}
-
-.bar, .active {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 1px 20em;
-  text-decoration: none;
-}
 
 
 
